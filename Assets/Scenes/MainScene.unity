@@ -2696,12 +2696,12 @@ PrefabInstance:
     - target: {fileID: 3216651775239190282, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 175
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3216651775239190282, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 175
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3216651775239190282, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
@@ -2766,7 +2766,7 @@ PrefabInstance:
     - target: {fileID: 3216651775239190283, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem
+      value: MissileLauncherItem
       objectReference: {fileID: 0}
     - target: {fileID: 3216651775239190284, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
@@ -2821,13 +2821,34 @@ PrefabInstance:
     - target: {fileID: 3216651775239190284, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 3216651775239190284, guid: 743603ec53b9d4a37b5fb9b00a116306,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3216651775239190285, guid: 743603ec53b9d4a37b5fb9b00a116306,
+        type: 3}
+      propertyPath: m_IgnoreLayout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216651775239190285, guid: 743603ec53b9d4a37b5fb9b00a116306,
+        type: 3}
+      propertyPath: m_PreferredWidth
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216651775239190285, guid: 743603ec53b9d4a37b5fb9b00a116306,
+        type: 3}
+      propertyPath: m_PreferredHeight
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216651775239190287, guid: 743603ec53b9d4a37b5fb9b00a116306,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 012d26db89a634b0285a5a1da416d466,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743603ec53b9d4a37b5fb9b00a116306, type: 3}
 --- !u!1001 &257740306
@@ -3493,7 +3514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 4481623095371209934, guid: 590664203b19a422da6d33124dc273e0,
     type: 3}
-  anotherTurretPrefab: {fileID: 4481623095371209934, guid: 0b9b74a5ea4464d8fa2066072877b287,
+  missileLauncherPrefab: {fileID: 5141916693025898917, guid: 2a6cf87787bda498fb183a2c52844c8a,
     type: 3}
 --- !u!1001 &304980706
 PrefabInstance:
@@ -16361,8 +16382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 70.8}
-  m_SizeDelta: {x: 0, y: 141.66101}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 0, y: 160.08334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830751590
 MonoBehaviour:
@@ -19164,6 +19185,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743603ec53b9d4a37b5fb9b00a116306, type: 3}
+--- !u!1 &3648737428454466171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8196992060629063075}
+  - component: {fileID: 4924797310459983131}
+  - component: {fileID: 7789428420840002694}
+  m_Layer: 0
+  m_Name: Missile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!33 &4924797310459983131
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648737428454466171}
+  m_Mesh: {fileID: -4436863061088633788, guid: 34d3bc4d4e0404b23a47e7d3b017cc83, type: 3}
 --- !u!1001 &6287882479633546470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19239,3 +19286,56 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6287882479633546470}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &7789428420840002694
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648737428454466171}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &8196992060629063075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648737428454466171}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.41679728, y: 2.5876315, z: 0.5406128}
+  m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
